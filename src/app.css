@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /*STYLE GUIDE*/
-:root{
+:root {
   --Strong-cyan: hsl(172, 67%, 45%);
   --Very-dark-cyan: hsl(183, 100%, 15%);
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -14,8 +14,8 @@
   --White: hsl(0, 0%, 100%);
 }
 
-*{
-  font-family: 'Space Mono', monospace;
+* {
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   box-sizing: content-box;
 }
@@ -23,4 +23,16 @@
 #percent_box input[type="radio"]:checked + label {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
